@@ -14,7 +14,7 @@ if (mysqli_query($connection, $sql)) {
   echo "Error creating table: " . mysqli_error($connection);
 }
 
-$sql = "CREATE TABLE IF NOT EXISTS new_category (
+$sql = "CREATE TABLE IF NOT EXISTS news_category (
   id INT(255) AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(255) UNIQUE NOT NULL)";
 
